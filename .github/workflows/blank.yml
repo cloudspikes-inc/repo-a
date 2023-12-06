@@ -75,6 +75,9 @@ jobs:
           pwd
           ls -la
           whoami
+          cd test
+          ls -la
+          pwd
 
 
 
