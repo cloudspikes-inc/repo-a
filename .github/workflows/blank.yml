@@ -61,8 +61,14 @@ jobs:
             https://api.github.com/repos/cloudspikes-inc/repo-b/dispatches \
             -d '{"event_type":"test_event","client_payload":{"unit":false,"integration":true}}'
 
+      - name: Checkout test
+        uses: actions/checkout@v3
+        with:
+          repository: ${{ github.repository_owner }}/test-artifact-repo
+          # ssh-key: ${{ secrets.PRIVATE_KEY_B }}
+          # ssh-known-hosts: company.domain.com
+          path: test
+          ref: main
 
 
-
-      
 
