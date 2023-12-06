@@ -68,7 +68,7 @@ jobs:
           # ssh-key: ${{ secrets.PRIVATE_KEY_B }}
           # ssh-known-hosts: company.domain.com
           path: test
-          ref: main
+          ref: 16
 
       - name: Test
         run: |
