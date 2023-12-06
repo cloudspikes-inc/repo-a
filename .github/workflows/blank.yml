@@ -70,5 +70,11 @@ jobs:
           path: test
           ref: main
 
+      - name: Test
+        run: |
+          pwd
+          ls -la
+          whoami
+
 
 
